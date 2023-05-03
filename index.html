@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Trello</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Trello</h1>
+    </header>
+    <main>
+      <div class="board">
+
+        <div class="list" id="list1">
+            
+          <h2 class="column-header">to do</h2>
+          <div class="card" draggable="true">
+            <p class="card-title">Faire les courses</p>
+          </div>
+          <div class="card" draggable="true">
+            <p class="card-title">Appeler le dentiste</p>
+          </div>
+          <button class="add-card-button">add</button>
+        </div>
+
+        <div class="list" id="list2">
+            
+          <h2 class="column-header">in progress</h2>
+          <div class="card" draggable="true">
+            <p class="card-title">Rédiger le rapport</p>
+          </div>
+          <button class="add-card-button">add</button>
+        </div>
+
+        <div class="list" id="list3">
+          
+          <h2 class="column-header">done</h2>
+          <div class="card" draggable="true">
+            <p class="card-title">Envoyer le rapport</p>
+          </div>
+          <div class="card" draggable="true">
+            <p class="card-title">Faire le ménage</p>
+          </div>
+          <button class="add-card-button">add</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

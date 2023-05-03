@@ -1,0 +1,60 @@
+
+
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Body */
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      
+      /* Board */
+      
+      .board {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      /* Column */
+      
+      .list {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      
+      .column-header {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+    
+      
+      /* Card */
+      
+      .card {
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      
+      .card-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
