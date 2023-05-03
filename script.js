@@ -1,12 +1,22 @@
-const addCardButtons = document.querySelectorAll('.add-card-button');
+const addCardButtons = document.querySelectorAll('.button-div');
 //add a card
 addCardButtons.forEach(button => {
   button.addEventListener('click', () => {
     const cardText = prompt('Enter card text:');
-    if (cardText) {
+    const cardContent = prompt('Enter description:');
+    
+    if (cardText && cardContent) {
       const card = document.createElement('div');
       card.classList.add('card');
-      card.textContent = cardText;
+      card.draggable = true;
+      const title = document.createElement('p');
+      const text = document.createElement('p');
+      title.classList.add('card-title');
+      text.classList.add('cardContent')
+      title.textContent = cardText;
+      text.textContent = cardContent;
+      card.appendChild(title);
+      card.appendChild(text);
       const cardContainer = button.closest('.list');
       cardContainer.insertBefore(card, button);
     }

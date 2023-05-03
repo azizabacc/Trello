@@ -12,7 +12,9 @@
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
       }
-      
+      .trello{
+        text-align: center;
+      }
       /* Board */
       
       .board {
@@ -20,6 +22,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px;
+        
       }
       
       /* Column */
@@ -27,17 +30,31 @@
       .list {
         width: 300px;
         background-color: #fff;
-        border-radius: 3px;
         box-shadow: 0px 2px 3px rgba(0,0,0,.2);
         padding: 10px;
+        padding-bottom: 40px;
         margin-bottom: 20px;
         cursor: pointer;
+        border-radius: 10px;
+        text-align: center;
+      }
+      #list1{
+        background-color: rgb(232, 232, 108);
+      }
+     
+      #list2{
+        background-color: rgb(87, 162, 237);
+      }
+      #list3{
+        background-color: rgb(87, 237, 119);
       }
       
       .column-header {
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 10px;
+        text-align: center;
+       
       }
       
     
@@ -50,11 +67,46 @@
         box-shadow: 0px 2px 3px rgba(0,0,0,.2);
         padding: 10px;
         margin-bottom: 10px;
-        cursor: pointer;
+        cursor: grab;
+        border-radius: 10px;
       }
+      .card:hover{
+        background-color: rgb(211, 24, 24);
+        color: #f4f4f4;
+      }
+      
       
       .card-title {
         font-size: 1.1em;
         font-weight: bold;
         margin-bottom: 10px;
+}
+
+    .cardContent{
+        position : relative;
+        padding : 10px 15px;
+        color : #111;
+        text-align : center;
+        background-color: bisque;
+        border-radius: 10px;
+        visibility : hidden;
+        opacity : 0;
+        transition : 0.3s ease-in-out;
+     
+      
+    }
+      .card:hover .cardContent{
+        margin-top : 30px;
+        visibility : visible;
+        opacity : 1;
+        transition-delay: 0.2s;
+
+       
+     }
+      .add-card-button{
+       
+       
+      }
+      .button-div{
+        text-align: center;
       }

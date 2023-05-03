@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trello</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>Trello</h1>
+      <h1 class="trello">Trello</h1>
     </header>
     <main>
       <div class="board">
@@ -17,11 +18,13 @@
           <h2 class="column-header">to do</h2>
           <div class="card" draggable="true">
             <p class="card-title">Faire les courses</p>
+            <p class="cardContent"> ne pas oublier pq </p>
           </div>
           <div class="card" draggable="true">
             <p class="card-title">Appeler le dentiste</p>
+            <p class="cardContent"> ne pas oublier de confirmer </p>
           </div>
-          <button class="add-card-button">add</button>
+          <div class="button-div">  <button class="add-card-button">add</button></div>
         </div>
 
         <div class="list" id="list2">
@@ -29,8 +32,9 @@
           <h2 class="column-header">in progress</h2>
           <div class="card" draggable="true">
             <p class="card-title">Rédiger le rapport</p>
+            <p class="cardContent"> partie théorique </p>
           </div>
-          <button class="add-card-button">add</button>
+          <div class="button-div">  <button class="add-card-button">add</button></div>
         </div>
 
         <div class="list" id="list3">
@@ -38,11 +42,14 @@
           <h2 class="column-header">done</h2>
           <div class="card" draggable="true">
             <p class="card-title">Envoyer le rapport</p>
+            <p class="cardContent"> avant 20h !!!! </p>
           </div>
           <div class="card" draggable="true">
             <p class="card-title">Faire le ménage</p>
+            <p class="cardContent"> sortir les poubelles </p>
           </div>
-          <button class="add-card-button">add</button>
+          <div class="button-div">  <button class="add-card-button">add</button></div>
+        
         </div>
       </div>
     </main>
